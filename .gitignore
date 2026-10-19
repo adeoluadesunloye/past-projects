@@ -1,0 +1,4 @@
+# Local secrets: never commit API keys
+.env
+*.local.js
+maps-key.js
