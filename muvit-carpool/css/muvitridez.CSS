@@ -584,3 +584,6 @@ textarea 					{display:block;padding:12px 15px; font-size:15px;width:100%;border
 .grey	{background-color:#34394A !important;}
 .white 	{background-color:#fff !important;}
 
+
+/* Keep card headings readable on the red cards */
+.course-col h3 { color: #fff !important; }
