@@ -623,3 +623,5 @@ button .fa-search{
   .post, .socials, .pay, .links, .contact{margin-top: auto;}
   .post{margin-top: 30px;}
 }
+/* Stop the page scrolling sideways */
+html, body { overflow-x: hidden; }
