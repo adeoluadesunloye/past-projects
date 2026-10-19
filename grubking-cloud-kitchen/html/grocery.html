@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GrubKing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="homepage.css" rel="stylesheet">
+        <script src="homepage.js" async></script>
+
+    </head>
+    <body>
+    
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>GrubKing</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+               <ul>  
+                   <li><a href="#home" id="homep">Homepage</a></li>
+                   <li><a href="#restaurants" id="rest" >Chicken Republic</a></li>
+                   <li><a href="#swallow" id="swa">Bukkah Hot</a></li>
+                   <li><a href="#order" id="or">Dominos</a></li>
+                   <li><a href="#cart" id="car" class="icon-shopping-cart"><i class="fas fa-shopping-cart"></i></a></li>
+               </ul>
+    </nav>
+    
+</header>
+        <section class="home" id="home">
+        <div class="content">
+            <h3>GRUBKING</h3><br>
+            <p>“A recipe has no soul. You, as the cook, must bring soul to the recipe.” – Thomas Keller</p>
+           <strong> <a href="#order" class="btn1">order now</a></strong>
+            </div>
+            <div class="image">
+                <img  src="photos/2-24962_food-png-image-with-transparent-background-indian-restaurant.png" alt="">
+            </div>
+            <img>
+        </section>
+        <div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search" id="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <ul class="list-group" id="result" ></ul>  
+  </div>
+</div>
+     <section class="drinks" id="restaurants" style="background-image: url(photos/brown-papyrus-paper_53876-14519.jpg)">
+
+    <h1 class="heading"> <span>Chicken Republic</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <span class="price"> ₦600 </span>
+            <img class="photo" src="photos/ChickenRepublic_RefuelMaxRiceBeansMeal.jpg" alt=""><br>  
+            <b class="title">Refuel Meal</b>
+            <p>1 piece of Soulfully Spiced Fried Chicken served with your choice of Fried or Spicy Rice, Spaghetti or Rice & Beans with our yummy Pepper Sauce.</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1000 </span>
+            <img class="photo" src="photos/ChickenRepublic_RefuelMeal.jpg" alt=""><br> 
+            <b class="title">Refuel Max</b>
+            <p>1 piece of Soulfully Spiced Fried Chicken with Fried or Spicy Rice, Spaghetti or Rice and Beans with Sauce plus Coleslaw or Moin Moin and a refreshing PET drink.</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦6100 </span>
+            <img class="photo" src="photos/2-REFUEL-FRIED-RICE-MEAL.jpg" alt=""><br> 
+            <b class="title">SOULFULLY SPICED FRIED CHICKEN</b>
+            <p>Enjoy 8 pieces of Soulfully Spiced Fried Chicken with your choice of 4 x portions of Spaghetti, Fried Rice, Spicy Rice or Regular Chips plus 2 x portions of Moin Moin or Coleslaw and 4 x PET drinks</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦2300</span>
+            <img class="photo" src="photos/BIG-CREW-MEAL-DARK.jpg" alt=""><br> 
+            <b class="title">Big Boyz Meal</b>
+            <p>Enjoy a chief burger with 1 piece of fried chicken, your choice of fried or spicy rice, plus a coleslaw and a monster energy drink</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1900 </span>
+            <img class="photo" src="photos/DOUBLE-CHICKWHIZZ-DARK.jpg" alt=""><br> 
+            <b class="title">Double ChickWizz Meal</b>
+            <p>Double the enjoyment with a Double ChickWhizz Sandwich filled with Soulfully Spiced Fried Chicken, Salad and our Secret Mayo served with Regular Chips and a refreshing PET drink.</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1450 </span>
+            <img class="photo" src="photos/ChickenRepublic_OriginalChickwhizzMeal.jpg" alt=""><br> 
+            <b class="title">ChickWizz Meal</b>
+            <p>Get an original ChickWhizz sandwich filled with Soulfully Spiced Fried Chicken, Salad and our Secret Mayo served with Regular Chips and a refreshing PET drink.</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+    </div>
+</section>
+        
+        <section class="drinks" id="restaurants" style="background-image: url(photos/bigbrown.jpg)">
+        <h1 class="heading"> <span>Bukka Hot</span></h1>
+            <h1 class="heading"> SOUPS </h1>
+            <div class="box-container">
+            <div class="box">
+            <span class="price"> ₦720 </span>
+            <img class="photo" src="photos/edikaikong.jpg" alt=""><br> 
+            <b class="title">Eba and Edikaikong</b>
+            <p>Vegetable soup prepared with waterleaf, pumpkin leaf, stockfish, fish and stocks</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>       
+        <div class="box">
+            <span class="price"> ₦720 </span>
+            <img class="photo" src="photos/Egusi.jpg" alt=""><br> 
+            <b class="title">Egusi</b>
+            <p>Well grounded egusi (melon) seed soup prepared with bitterleaf, stockfish, dried fish and stock</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <h2 class="heading" id="swallow"> SWALLOW </h2>
+        <div class="box">
+            <span class="price"> ₦180 </span>
+            <img class="photo" src="photos/semo.jpg" alt=""><br> 
+            <b class="title">Semo</b>
+            <p>1 wrap</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+         <div class="box">
+            <span class="price"> ₦180 </span>
+            <img class="photo" src="photos/Amala.png" alt=""><br> 
+            <b class="title">Amala</b>
+            <p>1 Wrap</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+       <div class="box">
+            <span class="price"> ₦180 </span>
+            <img class="photo" src="photos/eba.jpg" alt=""><br> 
+            <b class="title">Eba</b>
+            <p>1 Wrap</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <h2 class="heading">Breakfast </h2>
+                <div class="box">
+            <span class="price"> ₦2160</span>
+            <img class="photo" src="photos/fried%20turkry.jpg" alt=""><br> 
+            <b class="title">Fried Turkey</b>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+         <div class="box">
+            <span class="price"> ₦1800 </span>
+            <img class="photo" src="photos/snail.jpg" alt=""><br> 
+            <b class="title">Peppered Snail</b>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+       <div class="box">
+            <span class="price"> ₦1000 </span>
+            <img class="photo" src="photos/whiterice.jpg" alt=""><br> 
+            <b class="title">white rice</b>
+            <p>1 Portion</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <div class="box">
+            <span class="price"> ₦800 </span>
+            <img class="photo" src="photos/Plain-beans.png" alt=""><br> 
+            <b class="title">Plain Beans</b>
+            <p>1 Portion</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <div class="box">
+            <span class="price"> ₦400 </span>
+            <img class="photo" src="photos/jollofandmoinmoin.jpeg" alt=""><br> 
+            <b class="title">Jollof and Moi Moi</b>
+            <p>1 Portion</p>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <div class="box">
+            <span class="price"> ₦500 </span>
+            <img class="photo" src="photos/coke.jpg" alt=""><br> 
+            <b class="title">Coke</b><br> 
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <div class="box">
+            <span class="price"> ₦400 </span>
+            <img class="photo" src="photos/fanta.jpg" alt=""><br> 
+            <b class="title">Fanta</b><br> 
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+                <div class="box">
+            <span class="price"> ₦200 </span>
+            <img class="photo" src="photos/aquafina.jpg" alt=""><br> 
+            <b class="title">Aquafina</b><br>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+            </div> 
+        </section>
+       
+<section class="drinks" id="drinks" style="background-image: url(photos/rustybrown.jpg)">
+
+    <h1 class="heading"> <span>Dominos</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price"> ₦3600 </span>
+            <img class="photo" src="photos/pepperoni.jpg" alt=""><br> 
+            <h3 class="title">PEPPERONI SUPREME</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦4000 </span>
+            <img class="photo" src="photos/bbqbeef.jpg" alt=""><br> 
+            <h3 class="title">BBQ BEEF</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦4500 </span>
+            <img class="photo" src="photos/smokedbbq.jpg" alt=""><br> 
+            <h3 class="title">SMOKED BBQ SAUSAGE</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦4200 </span>
+            <img class="photo" src="photos/veggiesupreme.jpg" alt=""><br> 
+            <h3 class="title">VEGGIE SUPREME</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1500 </span>
+            <img class="photo" src="photos/breadsticks.jpg" alt=""><br> 
+            <h3 class="title">BREADSTICKS</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1600</span>
+            <img class="photo" src="photos/cheesybread.jpg" alt=""><br> 
+            <h3 class="title">CHEESY BREAD</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦2000 </span>
+            <img class="photo" src="photos/smallchops.jpg" alt=""><br> 
+            <h3 class="title">SMALL CHOPS</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1500 </span>
+            <img class="photo" src="photos/sausagerollpls.jpg" alt=""><br> 
+            <h3 class="title">SAUSAGE ROLL PLAIN</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+        <div class="box">
+            <span class="price"> ₦1500 </span>
+            <img class="photo" src="photos/meatpie.jpg" alt=""><br> 
+            <h3 class="title">MEAT PIE</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button class="btn shop-item-button" type="button">add to cart</button>
+        </div>
+
+    </div>
+</section>
+        
+        <div class="step-container" >
+
+    <h1 class="heading" style="color: black">how it works</h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="photos/step-1.jpg" alt="">
+            <h3>choose your favorite restaurant food</h3>
+        </div>
+                <div class="box">
+            <img src="photos/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="photos/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+
+        <div class="box">
+            <img src="photos/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+            
+            <section class="order" id="order">
+
+    <h1 class="heading" style="color: black">order now</h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="photos/ordernow.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="check out" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+</div>
+         <section id="cart" class="container content-section" >
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₦0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+   <footer class="footer">
+            <div class="fbox">
+                <div class="frow">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="">about us</a></li>
+                            <li><a href="">our service</a></li>
+                            <li><a href="">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>specials</h4>
+                        <ul>
+                            <li><a href="#">homemade</a></li>
+                            <li><a href="#">dishes</a></li>
+                            <li><a href="#">swallow</a></li>
+                            <li><a href="#">chicken</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                         <div class="social">
+      <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+      <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+      <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+                        </div>
+                        <h4>About Us</h4>
+                         <div class="location">
+                            <h3> <b style="color: #bbbbbb">EMAIL: grubking@yahoo.com</b></h3><br>
+                         <h3 style="color: #bbbbbb" >Contacts us:</h3> <a href="#">8, Wemco Rd, Ogba 101233, Lagos.</a><br>
+                         <h3 style="color: #bbbbbb">Telephone:</h3>   <a href="#"> +2349080792345 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+       <marquee behavior="alternate" bgcolor="beige" loop="-1" width="100%" >  <p>Current Date and Time is <span id='date-time'></span>.</p></marquee>
+          
+        </body>
+   
+ </html>

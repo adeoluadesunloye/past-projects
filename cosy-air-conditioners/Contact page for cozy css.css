@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/*styling for header starts here
+    --header-height:144px;
+    --header-padding:93px;
+*/
+html{
+    font-size: 10px;
+    font-family: "roboto Cn", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+    background-size: auto;
+    background-position: center;
+    
+}
+
+    /*styling for header starts here*/
+/*styling for header starts here*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: transparent;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: height 0.3 ease 0s, background-color 0.3s ease 0s;
+}
+header.shrink{
+    height: 70px;
+    background-color: #fff;
+}
+header .logo img{
+    height: 40px;
+    width: 100px;
+}
+/*styling for navigation bar starts here*/
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+    padding-right: 20px;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+   background: #333;
+    color: #fff;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+nav .active::before,
+nav .active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+   background: #333;
+    color: #fff;
+    left: 0;
+    transform: scaleX(1);
+    transition: all .5s;
+}
+nav .active::before{
+    top: 0;
+}
+nav .active::after{
+    bottom: 0;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+   transform: scaleX(1);
+}
+nav .fa{
+   margin: 4px;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+/*styling for header ends*/
+/* addding stylingto the map so it fits the page*/
+
+.map {
+  height: 400px;
+  /* The height is 400 pixels */
+    
+  width: 100%;
+  /* The width is the width of the web page */
+}
+ /* Styling for the runner after the nav bar on the page */
+ 
+.Runner {
+text-align: center;
+}
+
+
+.Runner p {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+    color: black;
+}
+ .Runner p {
+    animation: show 7s infinite;
+}
+
+@keyframes show {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+/*styling for the runner ends here*/
+
+ /* Styling for the contact form begins here*/
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.container h2 {
+    width: 100%;
+    padding: 40px;
+    background: white;
+    font-weight: 500;
+    color: brown;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.container h2 {
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: none;
+    text-decoration: underline;
+    text-transform: capitalize
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      
+}
+
+input:focus {
+    background-color: yellow;}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+   width: 100px;
+    background:brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px; 
+}
+
+/* When moving the mouse over the submit button, add a sandybrownn color */
+input[type=submit]:hover {
+  background-color: sandybrown;
+}
+
+/* Add a background color and some padding around the form */
+section{
+    padding: 14rem 9rem;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*Styling for newsletter begins here
+*/
+.Newsletter{
+    padding: 100px 40px;
+    text-align: center;
+    color: black;
+}
+.Newsletter p{
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email-box i{
+    background: brown;
+    width: 40px;
+    line-height: 40px;
+}
+.Newsletterbox, .btn{
+    border: none;
+    outline: none;
+}
+.Newsletterbox{
+    width: 0px;
+    transition: 0.6s;
+
+}
+.email-box:hover> .Newsletterbox,.Newsletterbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.btn{
+    background: brown;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* styling for newsletter ends here*/
+
+/*styling for footer starts here*/
+/*styling for footer starts here*/
+.footerbody{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 25vh;
+    flex-direction: column;
+    background: #ede7f6;
+}   
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+footer .containerfooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .containerfooter .sec{
+    margin-right: 30px;
+}
+footer .containerfooter .sec.aboutus{
+    width: 40%;
+}
+footer .containerfooter h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .containerfooter h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #89cff0;
+}
+footer .containerfooter .sec.aboutus p{
+    color: #999;
+}
+.sci{
+   margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover
+{
+    background: #89cff0;
+}
+.sci li a .fab{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklinks{
+    position: relative;
+    width: 25%;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li  a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+/*styling for footer ends here*/

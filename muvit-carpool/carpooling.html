@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="keywords" content="Private Transport and Car Hire HTML Template" />
+	<meta name="description" content="Private Transport and Car Hire HTML Template">
+	<meta name="author" content="themeenergy.com">
+	<script src="angular-1.8.2/angular-1.8.2/angular.min.js"></script>
+	<title>Muvit... Movement made easy</title>
+	<link rel="stylesheet" href="css/theme-red.css" />
+	<link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/pages.CSS">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Montserrat:400,700">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!--json-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<header>
+<div class="tophead">
+        
+      </div>
+            </div>
+                </div>
+					<div class="clearfix"> </div>	
+      <div>      
+      </div>
+    <nav class="navbar">
+       <ul>  <img src="Images/logologin.png" alt="logo" class="logo">
+            <li><a href="muvitridez.HTML">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="carpooling.html">CARPOOLING RULES</a></li>
+            <li><a href="traffic.html">ABOUT US</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+</nav>
+
+    </header>
+    <body>
+    <section>
+ <a id="Carpoolingrules"></a>
+            <h1 style="text-align: center; padding-bottom: 10px; "><strong>CARPOOLING RULES</strong></h1>
+ <!-- Container for the image gallery -->
+ <div class="container" id="carpooling">
+     
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+      <img src="drinkdrive.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+      <img src="speed.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+      <img src="Traffic signs.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+      <img src="Traffic Warning  (1).png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+      <img src="Masks.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/drinkdrive.jpg" style="width:50%" onclick="currentSlide(1)" alt="Don't Drink and Drive">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/speed.jpg" style="width:50%" onclick="currentSlide(2)" alt="Observe Speed Limits">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Traffic%20signs.jpg" style="width:50%" onclick="currentSlide(3)" alt="Traffic Signs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Traffic%20Warning%20%20(1).png" style="width:50%" onclick="currentSlide(4)" alt="Traffic Warnings">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Masks.jpg" style="width:50%" onclick="currentSlide(5)" alt="Always Wear your Masks">
+    </div>
+  </div>
+</div>
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+        </section>
+    </body>
+</html>
+ 

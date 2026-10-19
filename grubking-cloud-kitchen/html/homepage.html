@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GrubKing</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    
+        <link href="homepage.css" rel="stylesheet">
+        
+
+    </head>
+    <body>
+    
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>GrubKing</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+               <ul>  
+                   <li><a href="#home" id="homep">Homepage</a></li>
+                   <li><a href="chickenrepublic.html" id="rest" >Chicken Republic</a></li>
+                   <li><a href="bukkahot.html" id="swa">Bukkah Hot</a></li>
+                   <li><a href="dominos.html" id="or">Dominos</a></li>
+                   <li><a href="location.html" id="cont" class="cont">Contact Us</a></li>
+               </ul>
+    </nav>
+    
+</header>
+        <section class="home" id="home">
+        <div class="content">
+            <h3>GRUBKING</h3><br>
+            <p>“A recipe has no soul. You, as the cook, must bring soul to the recipe.” – Thomas Keller</p>
+           <strong> <a href="#steps" class="btn1">order now</a></strong>
+            </div>
+            <div class="image">
+                <img  src="photos/2-24962_food-png-image-with-transparent-background-indian-restaurant.png" alt="">
+            </div>
+            <img>
+        </section>
+         <div class="topnav">
+  <div class="search-container">
+    <form action="chickenrepublic.html">
+      <input type="text" placeholder="Search.." name="search" id="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <ul class="list-group" id="result" ></ul>  
+  </div>
+</div>
+        
+    <section class="secnav">
+        <h1>OUR GALLERY</h1>
+		<div class="slide hi-slide">
+		  <div class="hi-prev "></div>
+			<div class="hi-next "></div>
+			<ul>
+				<li>
+				<img src="photos/coconutrice.jpg" alt="Img 1" /></li>
+				<li><img src="photos/ofada.jpg" alt="Img 2" /></li>
+				<li><img src="photos/papandakara.jpg" alt="Img 3" /></li>
+				<li><img src="photos/breadsticks.jpg" alt="Img 4" /></li>
+				<li><img src="photos/smallchops.jpg" alt="Img 5" /></li>
+				<li><img src="photos/jollofandmoinmoin.jpeg" alt="Img 6" /></li>
+				<li><img src="photos/smokedbbq.jpg" alt="Img 7" /></li>
+                <li><img src="photos/meatpie.jpg" alt="Img 7" /></li>
+			</ul>
+		</div>
+</section>
+
+         <div class="full-img" id="fullImgBox">
+            <img id="fullImg">
+             <span onclick="closeFullImg()">x</span>
+        </div>
+        <h1 style="color: black"> customers best choice</h1>
+        <div class="img-gallery"><div>
+        <img src="photos/image1.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">Oyster Mushroom</h2></div>
+            <div>
+        <img src="photos/image2.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">waffles and creams</h2></div>
+            <div>
+        <img src="photos/image3.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">Chocolate Cake</h2></div>
+        <div>
+        <img src="photos/image4.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">Galicia</h2></div>
+        <div>
+        <img src="photos/image5.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">cheezy deluxe</h2></div>
+        <div>
+        <img src="photos/image6.png" onclick="openFullImg(this.src)"><h2 align="center" class="title">Meatified</h2></div>
+        <div>
+        <img src="photos/image7.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">Tomato pizza</h2></div>
+        <div>
+        <img src="photos/image8.jpg" onclick="openFullImg(this.src)"><h2 align="center" class="title">cherrys and fishfingers</h2></div>
+        </div>
+        
+     <section>
+         <div class= "newsletter">
+            <form action= "">
+            
+        <h1> Join our Newsletter </h1>
+            <p> This allows you to receive recent important updtes and information about restaurants, discounts, sales and so much more  </p></form>
+            <div class= "email-box">
+                <i class="fas fa-envelope-open-text"></i>
+                <input class="textbox" type="email" name="" value="" placeholder= "Enter your email">
+                <button class= "btnnews" type="button" name="button"> Subscribe </button>
+            </div>
+        </div>
+        </section>
+        <section class="drinkpng">
+        <img src="photos/drinks.png">
+            </section>
+        <div class="step-container" >
+
+    <h1 class="heading" style="color: black">how it works</h1>
+
+    <section class="steps" id="steps">
+
+        <div class="box">
+            <img src="photos/step-1.jpg" alt="">
+            <h3>choose your favorite restaurant food</h3>
+        </div>
+                <div class="box">
+            <img src="photos/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="photos/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+
+        <div class="box">
+            <img src="photos/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+            
+        </div>
+        <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+   <footer class="footer">
+            <div class="fbox">
+                <div class="frow">
+                    <div class="footer-col">
+                        <h4>support</h4>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>GrubKing</h4>
+                        <ul>
+                            <li><a href="#">About GrubKing</a></li>
+                            <li><a href="#">specials</a></li>
+                            <li><a href="#">homemade</a></li>
+                            <li><a href="#">sponsors</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                         <div class="social">
+      <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+      <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+      <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+                        </div>
+                        <h4>About Us</h4>
+                         <div class="location">
+                            <h3> <b style="color: #bbbbbb">EMAIL: grubking@yahoo.com</b></h3><br>
+                         <h3 style="color: #bbbbbb" >Contacts us:</h3> <a href="#">8, Wemco Rd, Ogba 101233, Lagos.</a><br>
+                         <h3 style="color: #bbbbbb">Telephone:</h3>   <a href="#"> +2349080792345 </a>
+                        </div>
+                    </div>
+                    <i style="color: beige">copyright©2021 GrubKing Nigeria, inc.All rights reserved.</i>
+                </div>
+            </div>
+        </footer>
+
+       <marquee behavior="alternate" bgcolor="beige" loop="-1" width="100%" >  <p>Current Date and Time is <span id='date-time'></span>.</p></marquee>
+       <script src="homepage.js" async></script> 
+        
+        </body>
+ </html>

@@ -1,0 +1,134 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url(../Images/vehicle1.png);
+    width: 100%;
+    h
+    background-position: center;
+    background-size: cover;
+}
+
+
+.heading{
+    background: linear-gradient(to right top, darkred, white, darkred);
+}
+header {
+    background-color: darkred;
+    border: none;
+    margin: 0;
+    padding: 0;
+    opacity: 100%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+form {
+    background: linear-gradient(to right top, darkred, red, darkred);
+    color: white;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    background-blend-mode: soft-light;
+    width: 350px;
+    height: 450px;
+    padding: 25px 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    float: right;
+}
+
+
+.loginbtn {
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right top, white darkorange white);
+    background-size: 200%;
+    color: darkorange;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.loginbtn:hover{
+    background-position: right;
+    font-size: 20px;
+}
+
+.signup
+{
+    padding-top: 10px;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+.input box
+{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.active
+{
+    background-color: darkorange;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    background-color: darkred
+}
+li
+{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+ul li:hover
+{
+    background-color: darkorange;
+}
+h3 {
+    color: white;
+}
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.usemuvit {
+    float: right;
+}
+
+.steps
+{
+    width: 75%;
+    float: right;
+    padding-right: 20px;
+}

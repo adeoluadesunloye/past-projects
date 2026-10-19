@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: 'poppins', sans-serif;
+}
+h1{
+     font-size: 2.5rem;
+    font-weight: 700;
+    color: maroon;
+}
+h2{
+    
+     font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+     font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+     font-size: 1.1rem;
+    font-weight: 600;
+     color: maroon;
+
+}
+/*h5{
+     font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}*/
+h6{
+     color: brown;
+}
+.buy-btn{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #32620e;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    transition: 0.3s ease;
+    
+}
+.buy-btn:hover{
+    background-color: green;
+        
+}
+
+hr{
+    width:30px;
+    height: 2px;
+    background-color: red;
+}
+
+.star {
+    padding: 10px 0;
+}
+.star i{
+    font-size:0.8rem;
+    color: goldenrod;
+}
+
+        .Product img{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+            
+        }
+        #Feature > div.row.mx-auto.container> nav> ul > li.page-item.active > a
+        {
+            background-color: black;
+        }
+        
+        #Feature > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+            background-color: red;
+            color: aliceblue;
+        }
+            
+        .pagination  a{
+            color: black;
+        }  
+        
+        .small-img-group{
+          display:flex;
+            justify-content: space-between;
+        }
+    
+        .small-img-col{
+          flex-basis: 24%;  
+            cursor: pointer;
+        }
+        
+        .sproduct select{display: block;
+            padding: 5px 10px;
+             }
+        .sproduct input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-right: 10px;
+             }
+        .sproduct input{
+            outline: none;
+        }
+            
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .box label{
+  display: flex;
+  height: 25px;
+  width: 50%;
+  align-items: center;
+  border: 1px solid orangered;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4{
+  background: orangered;
+  border-color: orangered;
+}
+.wrapper .box label .dot{
+  height: 15px;
+  width: 15px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot{
+  background: #fff;
+}
+.box label .dot::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before{
+  background: orange;
+  transform: translate(-50%, -50%) scale(1);
+}
+.wrapper .box label .text{
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.wrapper .box label .text strong{
+  color: orange;
+  margin: 0 10px;
+   font-size: 14px;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text{
+  color: #fff;
+}
+.wrapper .box input[type="radio"]{
+  display: none;
+}
+
+.pt-5{
+    margin-top: 6rem!important;
+}
+    
+    
+

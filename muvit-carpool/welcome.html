@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muvit- movement made easy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <script src="jquery/jquery-ui-themes-1.13.0-rc.2/jquery-ui-themes-1.13.0-rc.2/themes/smoothness/jquery-ui.css"></script>
+    <script src="Bootstrap/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/welcome.css">
+</head>
+    <header>
+    <div>
+    <h3><img src="Images/logologin.png" alt="logo" style="width:103px; height: 65px; vertical-align: middle;"> Carpooling</h3>
+    </div>
+     <ul>
+         
+        <li><a class="active" href="welcome.html"><i class="fas-fa-home"></i>Login</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faqs.html">FAQs</a> </li>
+        <li><a href="register.html"> SignUp</a></li>
+    
+    </ul>
+    </header>
+ 
+    
+<body>
+<div class="container" style="float: right">
+    <br><br>
+    <form>
+    <h1>Login</h1>
+    <div class="form-group">
+        <label for="email">Username:</label><br>
+        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username"><br>
+    </div>
+    <div class="form-group">
+        <label for="pwdn">Password:</label><br>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd"><br>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+    </div><br>
+        <div style="padding-left: 65px;">
+    <button type="submit" onclick="check(this.form)" name="btn_submit" value="Login"class="loginbtn">Login</button>
+        </div>
+        <div class="signup">
+            Don't have an account?<br>
+            <a href="register.html">Sign Up</a>
+        </div>
+  </form>
+</div>
+    <div class="usemuvit">
+    <img src="Images/home.jpg" alt="usemuvit" class="steps">
+    
+    </div>
+
+</body>
+</html>

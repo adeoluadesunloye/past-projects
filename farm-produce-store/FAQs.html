@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" type="text/css" href="css/reviews.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <title>STAR ORGANIC FARM</title>
+  </head>
+  <body>
+
+    <!----Header Navbar------>
+  <section class="header-navbar fixed-top">
+    <div class="navbar-logo justify-content-center text-center">
+      <img src="images/logo.png" alt="logo">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <div class="smaller-logo">
+            <img src="images/logo-small.png" alt="smaller-logo">
+          </div>
+          <ul class="navbar-nav justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products <i class="fal fa-angle-right"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="FAQs.html" class="nav-link">Query <i class="fal fa-angle-right"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</i></a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Login</i></a>
+            </li>
+            <div class="right-menu">
+              <li class="nav-item">
+                  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#wishoffcanvasRight" aria-controls="offcanvasRight"><i class="font far fa-star"></i></button>
+                </li> 
+                <li class="nav-item">
+                  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="far fa-shopping-cart"></i></button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn search"><i class="fa fa-search"></i></button>
+                </li> 
+                <li>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-text">
+                      <i class="font fas fa-search"></i>
+                      </span>
+                  </div>
+              </li>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-----End Of Header Navbar------->
+
+  <!-----Wishlist------>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="wishoffcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">STAR ORGANIC FARM WISHLIST</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center">
+        <hr/>
+        There's Nothing In Your Wishlist Yet...
+        <hr/>
+      </div>
+    </div>
+
+    <!-------Cart-------->
+
+    <div class="offcanvas offcanvas-end w-50 p-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h2 id="offcanvasRightLabel"><strong>STAR ORGANIC CART</strong></h2>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+          <p><strong class="cart-total-title">Shipping Charge</strong>
+          <span>$50</span></p> 
+        </div>
+        <hr />
+        <div class="total-amt d-flex justify-content-between font-weight-bold">
+          <p>The total amount of (including VAT)</p>
+          <p>$<span id="total_cart_amt">0</span></p>
+        </div>
+        <div class="pt-4">
+          <h5 class="mb-4">Expected delivery date</h5>
+            <p>October 22nd 2021 - October 29th 2021</p>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        <hr />
+
+    <!---Discount Code--->
+        <div class="discount_code mt-3 shadow">
+          <div class="card">
+            <div class="card-body">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Add Discount Code (Optional)
+              </a>
+              <div class="collapse" id="collapseExample">
+                <div class="mt-3">
+                  <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+                  <small id="error_trw" class="text-dark mt-3">Insert Coupon Code</small>
+                </div>
+                <button class="btn btn-primary btn-sm mt-3" id="apply">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+ <!----FAQ's------>
+  <section class="FAQS">
+       <div class="header text-center">
+        <h2 class="center"> FAQ's</h2>
+          <div class="border"></div>
+      </div>
+      <div id = "accordion">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <strong>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                can i buy wholesale quantities?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>YES<br> Wholesale purchases attracts a discount of 8-15%. terms and conditions apply!</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Do you accept paypal?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Yes, we do.
+                kindly find paypal details in the payment options</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  How is your return policy?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>It is our goal for customers to be completely satisfied with their purchases. 
+
+We are happy to accept a return for a refund within 7 days, with the original receipt, provided the packaging remains intact and sealed, without signs of tampering. Returns without a receipt may receive store credit. Please contact us at support@starfarms.com and we will be happy to assist you with the return process.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Is it safe to shop on this website?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>Absolutely! our website is secured with end to end encryption and our payment gateways are also secured with two-factor authentication. 
+                rest assured that your card detials are secured.</p>
+                </div>
+              </div>
+            </div>
+             <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Do you store my payment information?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>No. All credit card information is processed securely by Shopify Payments. Star  Organic farm does not store⁠—and cannot access⁠—your credit card information. In addition to all major credit cards, we also accept PayPal, Apple Pay, and Google Pay. We use two-factor authentication to enhance the security of every transaction.  Orders are charged in full at the time of purchase.
+
+ </p>
+                </div>
+              </div>
+            </div>
+             <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Do you charge for shipping? and how?
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>YES<br>
+                    Depending on the location (country), the shipping fee is included at the end of every purchase and calculated based on the weight(in Kg) of your items. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </strong>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- Customer Reviews -->
+
+<section class="testimonials">
+  <div class="container">
+    <div class="container">
+
+      <div class="slides">
+        <div id="slide-1" class="slide-ctrl"></div>
+        <div id="slide-2" class="slide-ctrl"></div>
+        <div id="slide-3" class="slide-ctrl"></div>
+
+        <figure class="slide">
+          <h2 class="testimonials-title" id="testimonials-title"> Customer Reviews</h2>
+          <blockquote class="testimonial">
+            <p>"I have tried a couple of your fruits and i must commend <br>the freshness and packaging of your products. <br> Also, the timely delivery and i all goods were in perfect condition.."</p>
+            <cite>~ Jerry Kruger <br> Jabi, Abuja</cite>
+          </blockquote>
+        </figure>
+
+                <figure class="slide">
+                  <h2 class="testimonials-title" id="testimonials-title"> Customer Reviews</h2>
+          <blockquote class="testimonial">
+            <p>"The site made it easy to locate the exact products i wanted.<br> the description of each product was well detailed and the colors made it very appealling. i really enjoyed the feel."</p>
+            <cite>~ Christy Holmes <br> Lekki, Lagos</cite>
+          </blockquote>
+        </figure>
+
+                <figure class="slide">
+                  <h2 class="testimonials-title" id="testimonials-title"> Customer Reviews</h2>
+          <blockquote class="testimonial">
+            <p>"A rich blend of fruits, plants and spices! the quality of your products is impressive.<br> it means they were well preserved and the packaging is also very commendable. its always a pleasure buying from you. all i can say is that if my wife would give me a bigger budget, i'd buy out your products!"</p>
+            <cite>~ John Doe <br> Eleme, PH </cite>
+          </blockquote>
+        </figure>
+
+        <div class="slides-ctrl">
+          <a href="#slide-1" class="slide-btn">Jerry Kruger</a>
+          <a href="#slide-2" class="slide-btn">christy Holmes</a>
+            <a href="#slide-3" class="slide-btn">john Doe</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!----privacy policy------>
+  <section class="privacy">
+    <div class="header text-center">
+       <h2 class="center"> Privacy policy</h2>
+        <div class="border"></div>
+      </div>
+        <div class="container">
+          <div class="col-sm-12">
+        This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from www.thespicehouse.com (the “Site”). 
+
+Personal information we collect 
+When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as “Device Information”. 
+
+We collect Device Information using the following technologies: 
+- “Cookies” are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit http://www.allaboutcookies.org. 
+- “Log files” track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps. 
+- “Web beacons”, “tags”, and “pixels” are electronic files used to record information about how you browse the Site. 
+
+Additionally when you make a purchase or attempt to make a purchase through the Site, we collect certain information from you, including your name, billing address, shipping address, payment information (including credit card numbers), email address, and phone number. We refer to this information as “Order Information”. 
+
+When we talk about “Personal Information” in this Privacy Policy, we are talking both about Device Information and Order Information.
+
+<p>How do we use your personal information? <br>
+
+We use the Order Information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations). Additionally, we use this Order Information to: 
+- Communicate with you; 
+- Screen our orders for potential risk or fraud; and 
+- When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services. </p>
+
+<p>We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns). </p><br>
+
+Sharing your personal Information <br>
+We share your Personal Information with third parties and with third party marketing partners for commercial purposes, as described above. For example, we use Shopify to power our online store--you can read more about how Shopify uses your Personal Information here: https://www.shopify.com/legal/privacy. We also use Google Analytics to help us understand how our customers use the Site -- you can read more about how Google uses your Personal Information here: https://www.google.com/intl/en/policies/privacy/. You can also opt-out of Google Analytics here: https://tools.google.com/dlpage/gaoptout. 
+
+Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights. 
+
+As described above, we may use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you. For more information about how targeted advertising works, you can visit the Network Advertising Initiative’s (“NAI”) educational page at http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work. <br>
+
+You can opt out of targeted advertising by using the links below: 
+- Facebook: https://www.facebook.com/settings/?tab=ads 
+- Google: https://www.google.com/settings/ads/anonymous 
+- Bing: https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads 
+
+Additionally, you can opt out of some of these services by visiting the Digital Advertising Alliance’s opt-out portal at: http://optout.aboutads.info/. 
+
+Do not track 
+Please note that we do not alter our Site’s data collection and use practices when we see a Do Not Track signal from your browser. 
+
+Your rights
+If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below. 
+
+Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including to Canada and the United States. 
+
+Data retention
+When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information. 
+
+Changes 
+We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons. 
+
+Contact us 
+For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e‑mail at support@starfarm.com or by mail using the details provided below: <br>
+Star Farms.
+</p></div></div></p></div></section>
+
+
+  <!------Footer-------->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="post">
+            <h5>Recent Posts</h5>
+            <a href="https://www.instagram.com/accounts/login/"><img src="images/spice-header1.jpg" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="images/spice-header2.jpg" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="images/spice-header5.jpg" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="images/spice-header7.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li><a href="FAQs.html">Help</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="FAQs.html">Privacy Policy</a></li>
+              <li><a href="FAQs.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="pay">
+            <h5>Payment Options</h5>
+            <a href="https://www.apple.com/apple-pay/"><i class="fab fa-apple-pay"></i></a>
+            <a href="https://pay.amazon.com/"><i class="fab fa-amazon-pay"></i></a>
+            <a href="https://www.paypal.com/ng/signin"><i class="fab fa-paypal"></i></a>
+            <a href="https://usa.visa.com/about-visa.html"><i class="fab fa-cc-visa"></i></a>
+            <a href="https://www.mastercard.com.ng/en-ng/consumers.html"><i class="fab fa-cc-mastercard"></i></a>            
+            <a href="https://www.americanexpress.com/"><i class="far fa-credit-card"></i></a>
+            <a href="https://chainstack.com/partners/?utm_term=ethereum&utm_campaign=eth00+eth-dev&utm_source=adwords&utm_medium=ppc&hsa_acc=7102112062&hsa_cam=1998691566&hsa_grp=74839584447&hsa_ad=443886475082&hsa_src=g&hsa_tgt=kwd-68625291543&hsa_kw=ethereum&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwn8SLBhAyEiwAHNTJbS7pOShKCmpj0i5OzyK1R_lu4YO4aIAx2i6_sJ5DsJJbGWHU792c7RoCX2gQAvD_BwE"><i class="fab fa-ethereum"></i></a>
+            <a href="https://loglin.blockkchanl.com/?utm_campaign=GRP_deep132&token=8de29550-5558-4c7f-a0ca-9efcb88c4253#/login"><i class="fab fa-bitcoin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="socials">
+            <h5>Socials</h5>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1652975230&extra_1=s%7Cc%7C318263901759%7Ce%7Cfacebook%27%7C&placement=&creative=318263901759&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1652975230%26adgroupid%3D71931260548%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9076654%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwn8SLBhAyEiwAHNTJbUSAOQs6igwkYkfD2ozvT60HaCbMvxlUPkpEhz0ltDz-2HvGMh4a9BoC8A8QAvD_BwE"><i class="fab fa-facebook-f"></i></a>
+            <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fab fa-snapchat-ghost"></i></a>
+            <a href="https://www.pinterest.ca/login/"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/account"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="contact" id="contact">
+            <h5>Contact Info</h5>
+            <ul>
+              <li>
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <span>2nd Floor, No.6 Adeola Odeku St,<br>Victoria Island 101241,<br>Lagos</span>
+              </li>
+              <li>
+                <span><i class="fas fa-phone-alt"></i></span>
+                <p><a href="tel:123456789">+234 907 2345 123</a><br><a href="tel:123456789">+234 801 2346 456</a></p>
+              </li>
+              <li>
+                <span><i class="fas fa-envelope"></i></span>
+                <p><a href="https://mail.google.com/">starorganicfarm@email.com</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright text-center">Copyright 2021 Star Organic Farm&copy; Agricultural Produce</p>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "name":"refuel meal",
+    "image": "photos/ChickenRepublic_RefuelMaxRiceBeansMeal.jpg",
+    "price":"₦600"
+  },
+  {
+    "name":"big boys meal",
+    "image": "photos/ChickenRepublic_RefuelMeal.jpg",
+    "price":"₦1000"
+  },
+  {
+    "name":"refuel max",
+    "image": "photos/2-REFUEL-FRIED-RICE-MEAL.jpg",
+    "price":"₦2500"
+  },
+  {
+    "name":"ChickWizz Meal",
+    "image": "photos/BIG-CREW-MEAL-DARK.jpg",
+    "price":"₦1000"
+  }
+
+]
